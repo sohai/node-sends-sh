@@ -1,0 +1,14 @@
+{
+  "name": "sent-shh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "author": "",
+  "dependencies": {
+    "nodemailer": "^4.2.0",
+    "tar.gz": "^1.0.5"
+  }
+}
